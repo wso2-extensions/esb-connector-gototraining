@@ -65,7 +65,7 @@ Steps to follow in setting integration test.
 	
 	Note:- When providing dates for 'createTrainingStartDate','createTrainingEndDate','updateTrainingStartDate','updateTrainingEndDate' provide recent dates that falls within the trial period of the current account.
 
- 7. Navigate to "{ESB_Connector_Home}/" and run the following command.
+ 7. Navigate to "{GoToTraining_Home}/" and run the following command.
       $ mvn clean install
 	  
 	  Note:- GoToTraining trial account expires within 30 days.
