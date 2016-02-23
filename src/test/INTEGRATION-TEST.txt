@@ -22,7 +22,7 @@ Steps to follow in setting integration test.
 
  2. Deploy relevant patches, if applicable and the ESB should be configured as below.
 																				           
- 3. Compress modified ESB as wso2esb-4.9.0-ALPHA.zip and copy that zip file in to location "{ESB_Connector_Home}/repository".
+ 3. Compress modified ESB as wso2esb-4.9.0zip and copy that zip file in to location "{ESB_Connector_Home}/repository".
 
  4. Create a Citrix account and obtain a client ID.
 	i) 		Using the URL "https://developer.citrixonline.com/user/register" create a Citrix online account.
