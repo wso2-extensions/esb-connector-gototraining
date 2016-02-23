@@ -22,7 +22,7 @@ Steps to follow in setting integration test.
 
  2. Deploy relevant patches, if applicable and the ESB should be configured as below.
 																				           
- 3. Compress modified ESB as wso2esb-4.9.0zip and copy that zip file in to location "{GoToTraining_Home}/repository".
+ 3. Compress modified ESB as wso2esb-4.9.0zip and copy that zip file in to location "{GOTOTRAINING_HOME}/repository".
 
  4. Create a Citrix account and obtain a client ID.
 	i) 		Using the URL "https://developer.citrixonline.com/user/register" create a Citrix online account.
@@ -40,7 +40,7 @@ Steps to follow in setting integration test.
 			d)client_id  -	 Use the Consumer Key you obtained under Step 4 iii).
 	iii)	Get the ornanizer_key and the access token from the response.
 			
- 6. Update the GoToTraining properties file at location "{GoToTraining_Home}/src/test/resources/artifacts/ESB/connector/config" as below.
+ 6. Update the GoToTraining properties file at location "{GOTOTRAINING_HOME}/src/test/resources/artifacts/ESB/connector/config" as below.
 	
 	i)		apiUrl 									- 	Use "https://api.citrixonline.com".
 	ii)		accessToken								-	Use the access token obtained in Step 5 iii).
@@ -62,10 +62,10 @@ Steps to follow in setting integration test.
 	xviii)	email									-	Use a valid user email address.
 	xix)	surname									-	User a valid string as the surname.
 	xx)		givenName								-	User valid string as the given name.
-	
+
 	Note:- When providing dates for 'createTrainingStartDate','createTrainingEndDate','updateTrainingStartDate','updateTrainingEndDate' provide recent dates that falls within the trial period of the current account.
 
- 7. Navigate to "{GoToTraining_Home}/" and run the following command.
+ 7. Navigate to "{GOTOTRAINING_HOME}/" and run the following command.
       $ mvn clean install
 	  
 	  Note:- GoToTraining trial account expires within 30 days.
