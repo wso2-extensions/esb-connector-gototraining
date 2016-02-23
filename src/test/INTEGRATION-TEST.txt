@@ -42,26 +42,26 @@ Steps to follow in setting integration test.
 			
  6. Update the GoToTraining properties file at location "{GOTOTRAINING_HOME}/src/test/resources/artifacts/ESB/connector/config" as below.
 	
-	i)		apiUrl 									- 	Use "https://api.citrixonline.com".
-	ii)		accessToken								-	Use the access token obtained in Step 5 iii).
-	iii)	organizerKey							-	Use the ornanizer_key obtained in Step 5 iii).
-	iv)		createTrainingStartDate					-	Use a valid future date in the ISO date time format(e.g: 2015-11-25T07:00:00Z).
-	v)		createTrainingEndDate					-   Use a valid future date in the ISO date time format(e.g: 2015-11-25T09:00:00Z).This date should be a date comes after 'createTrainingStartDate'.
-	vi)		createTrainingDescription				-	Use a valid string as the description of the training.
-	vii)	createTrainingName						-	Use a valid name for the name of the training.	
-	viii)	createTrainingTimeZone					-	Use a valid time zone (e.g: GMT).
-	ix)		createTrainingDisableWebRegistration	-	Use either 'true' or 'false'.
-	x)		createTrainingDisableConfirmationEmail	-	Use either 'true' or 'false'.
-	xi)		createTrainingNegativeStartDate			-	Use a past date in the ISO date time format(e.g: 2013-11-25T09:00:00Z).
-	xii)	updateTrainingName						-	Use a valid name for the training that is different than the value given for 'createTrainingName'.
-	xiii)	updateTrainingDescription				-	Use a valid string as the description of the training that is different than than the description given for 'createTrainingDescription'.
-	xiv)	update									-	Use "times".
-	xv)		updateTrainingStartDate					-	Use a valid future date in the ISO date time format(e.g: 2015-11-25T07:00:00Z). Use a date different to 'createTrainingStartDate'.
-	xvi)	updateTrainingEndDate					-	Use a valid future date in the ISO date time format(e.g: 2015-11-25T07:00:00Z). Use a date different to 'createTrainingEndDate' and this should be a past date to 'updateTrainingStartDate'.
-	xvii)	updateTimeout							-	Use '5000'.
-	xviii)	email									-	Use a valid user email address.
-	xix)	surname									-	User a valid string as the surname.
-	xx)		givenName								-	User valid string as the given name.
+	i)      apiUrl                                  -   Use "https://api.citrixonline.com".
+	ii)     accessToken                             -   Use the access token obtained in Step 5 iii).
+	iii)    organizerKey                            -   Use the ornanizer_key obtained in Step 5 iii).
+	iv)     createTrainingStartDate                 -	Use a valid future date in the ISO date time format(e.g: 2015-11-25T07:00:00Z).
+	v)      createTrainingEndDate                   -   Use a valid future date in the ISO date time format(e.g: 2015-11-25T09:00:00Z).This date should be a date comes after 'createTrainingStartDate'.
+	vi)     createTrainingDescription               -   Use a valid string as the description of the training.
+	vii)    createTrainingName                      -   Use a valid name for the name of the training.
+	viii)   createTrainingTimeZone                  -   Use a valid time zone (e.g: GMT).
+	ix)     createTrainingDisableWebRegistration    -   Use either 'true' or 'false'.
+	x)      createTrainingDisableConfirmationEmail  -   Use either 'true' or 'false'.
+	xi)     createTrainingNegativeStartDate         -   Use a past date in the ISO date time format(e.g: 2013-11-25T09:00:00Z).
+	xii)    updateTrainingName                      -   Use a valid name for the training that is different than the value given for 'createTrainingName'.
+	xiii)   updateTrainingDescription               -   Use a valid string as the description of the training that is different than than the description given for 'createTrainingDescription'.
+	xiv)    update                                  -   Use "times".
+	xv)     updateTrainingStartDate                 -   Use a valid future date in the ISO date time format(e.g: 2015-11-25T07:00:00Z). Use a date different to 'createTrainingStartDate'.
+	xvi)    updateTrainingEndDate                   -   Use a valid future date in the ISO date time format(e.g: 2015-11-25T07:00:00Z). Use a date different to 'createTrainingEndDate' and this should be a past date to 'updateTrainingStartDate'.
+	xvii)   updateTimeout                           -   Use '5000'.
+	xviii)  email                                   -   Use a valid user email address.
+	xix)    surname                                 -   User a valid string as the surname.
+	xx)     givenName                               -   User valid string as the given name.
 
 	Note:- When providing dates for 'createTrainingStartDate','createTrainingEndDate','updateTrainingStartDate','updateTrainingEndDate' provide recent dates that falls within the trial period of the current account.
 
