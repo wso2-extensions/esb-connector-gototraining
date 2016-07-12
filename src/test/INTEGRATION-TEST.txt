@@ -9,42 +9,35 @@ Pre-requisites:
 
 Tested Platform: 
 
- - Microsoft WINDOWS V-7
- - UBUNTU 13.04
- - WSO2 ESB 4.9.0
+ - Mac OSx 10.9
+ - WSO2 ESB 5.0.0-SNAPSHOT
 
 Note:
 	This test suite can be executed by setting up a new GoToTraining trial account and a Citrix account and follow all the instruction given below in step 4 and 5.
 
 Steps to follow in setting integration test.
 
- 1. Download WSO2 ESB 4.9.0 from official website.
+ 1. Download ESB 5.0.0-SNAPSHOT from official website. Extract the ESB and put "-XX:-UseSplitVerifier" under $JVM_MEM_OPTS into {ESB_HOME}/bin/wso2server.sh.
 
- 2. Deploy relevant patches, if applicable and the ESB should be configured as below.
-																				           
- 3. Compress modified ESB as wso2esb-4.9.0zip and copy that zip file in to location "{GOTOTRAINING_HOME}/repository".
+ 2. Compress modified ESB as wso2esb-5.0.0-SNAPSHOT.zip and copy that zip file in to location "{GOTOTRAINING_HOME}/repository".
 
- 4. Create a Citrix account and obtain a client ID.
+ 3. Create a Citrix account and obtain a client ID.
 	i) 		Using the URL "https://developer.citrixonline.com/user/register" create a Citrix online account.
 	ii)		Login to the Citrix account and go to 'My Apps' and add a new app.
 	iii)	Select the above created app and obtain the Consumer Key.
 
- 5. Create a GoToTraining trial account and obtain the access token and the organizer_key.
+ 4. Create a GoToTraining trial account and obtain the access token and the organizer_key.
 	i)		Using the URL "https://secure.citrixonline.com/secure/gototraining/commerce/try/register" create a Goto training free trial account using following details.
 			a)Select number of organizer seats as 9.
 			b)Enter the relevant information to create the account.Me!
-    ii)	    Follow the instructions in the 	"https://developer.citrixonline.com/page/direct-login" and make a GET request to the URL "https://api.citrixonline.com/oauth/access_token" passing the below parameters
-			a)grant_type -   Use "password".
-			b)user_id    -   User email address that you used to create the GoTo Training account.
-			c)password 	 -   Password of your GoTo Training account.
-			d)client_id  -	 Use the Consumer Key you obtained under Step 4 iii).
-	iii)	Get the ornanizer_key and the access token from the response.
+        ii)	Follow the instructions in the 	"https://developer.citrixonline.com/how-get-access-token-and-organizer-key" to get the access token.
+        iii)	Get the ornanizer_key and the access token from the response.
 			
- 6. Update the GoToTraining properties file at location "{GOTOTRAINING_HOME}/src/test/resources/artifacts/ESB/connector/config" as below.
+ 5. Update the GoToTraining properties file at location "{GOTOTRAINING_HOME}/src/test/resources/artifacts/ESB/connector/config" as below.
 	
 	i)      apiUrl                                  -   Use "https://api.citrixonline.com".
-	ii)     accessToken                             -   Use the access token obtained in Step 5 iii).
-	iii)    organizerKey                            -   Use the ornanizer_key obtained in Step 5 iii).
+	ii)     accessToken                             -   Use the access token obtained in Step 4 iii).
+	iii)    organizerKey                            -   Use the ornanizer_key obtained in Step 4 iii).
 	iv)     createTrainingStartDate                 -	Use a valid future date in the ISO date time format(e.g: 2015-11-25T07:00:00Z).
 	v)      createTrainingEndDate                   -   Use a valid future date in the ISO date time format(e.g: 2015-11-25T09:00:00Z).This date should be a date comes after 'createTrainingStartDate'.
 	vi)     createTrainingDescription               -   Use a valid string as the description of the training.
