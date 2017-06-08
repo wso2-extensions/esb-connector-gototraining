@@ -50,7 +50,7 @@ public class GototrainingConnectorIntegrationTest extends ConnectorIntegrationTe
         esbRequestHeadersMap.put("Accept", "application/json");
 
         apiRequestHeadersMap.putAll(esbRequestHeadersMap);
-        apiRequestHeadersMap.put("Authorization", "OAuth oauth_token=" + connectorProperties.getProperty("accessToken"));
+        apiRequestHeadersMap.put("Authorization", connectorProperties.getProperty("accessToken"));
 
         apiRequestUrl = connectorProperties.getProperty("apiUrl") + "/G2T/rest";
     }
