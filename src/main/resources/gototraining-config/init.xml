@@ -36,7 +36,7 @@
 
         <filter source="boolean(get-property('uri.var.apiUrl'))" regex="false">
             <then>
-                <property name="uri.var.apiUrl" value="https://api.citrixonline.com"/>
+                <property name="uri.var.apiUrl" value="https://api.getgo.com"/>
             </then>
         </filter>
 
@@ -68,7 +68,7 @@
         </filter>
 
         <property name="uri.var.apiUrl" expression="fn:concat(get-property('uri.var.apiUrl'), '/G2T/rest')"/>
-        <header name="Authorization" expression="fn:concat('OAuth oauth_token=', get-property('uri.var.accessToken'))" scope="transport"/>
+        <header name="Authorization" expression="$ctx:uri.var.accessToken" scope="transport"/>
 
     </sequence>
 </template>
