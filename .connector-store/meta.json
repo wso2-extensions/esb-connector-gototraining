@@ -4,7 +4,7 @@
     "category": "Productivity Tools",
     "documentationUrl": "https://docs.wso2.com/display/ESBCONNECTORS/GoToTraining+Connector",
     "description": "The GoToTraining connector allows you to access the GoToTraining REST API through the WSO2 ESB. The GoToTraining online training system enables you to provide live, interactive instructions to employees, customers and students anywhere, anytime. It reduces travel and reaches more learners by moving your instruction programs online.",
-    "status": "Unsupported",
+    "status": "Active",
     "labels": [
         "connector"
     ],
